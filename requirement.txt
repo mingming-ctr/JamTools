@@ -7,7 +7,7 @@ requests
 playsound
 PyInstaller==3.4
 baidu-aip
-PyQt5==5.15.2
+PyQt5==5.15.7
 PyQt5-sip==12.8.1
 PyQt5-stubs==5.14.2.2
 numpy
@@ -17,5 +17,5 @@ fake-useragent==0.1.11
 #SpeechRecognition
 #tencentcloud-sdk-python
 setuptools==50.3.0
-opencv-contrib-python==3.4.2.17
+opencv-contrib-python==4.6.0.66
 

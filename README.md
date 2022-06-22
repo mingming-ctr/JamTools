@@ -259,3 +259,33 @@ setuptools==50.3.0
 此外,本软件多媒体处理能力主要依赖于[ffmpeg库](https://ffmpeg.org/),需要自行下载[ffmpeg](https://ffmpeg.org/)(用于录屏和多媒体处理)和[gifsicle](http://www.lcdf.org/gifsicle/)(用于gif压缩)可执行文件放到bin目录对应操作系统的文件夹下,方可使用对应功能.
 
 配置好以上环境后,可以通过运行jamtoolsbuild.py文件一键打包对应平台下的包,然后通过fbs install命令构建安装程序,详情请看[这里](https://github.com/mherrmann/fbs-tutorial)
+
+
+安装
++ 1.问题
+问题1：WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'C:\Users\m\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+执行 python.exe -m pip install --upgrade pip
+
+问题2：ERROR: Could not find a version that satisfies the requirement opencv-contrib-python==3.4.2.17 (from versions: 3.4.11.45, 3.4.13.47, 3.4.14.51, 3.4.15.55, 3.4.16.59, 3.4.17.61, 3.4.17.63, 3.4.18.65, 4.4.0.46, 4.5.1.48, 4.5.2.52, 4.5.3.56, 4.5.4.58, 4.5.4.60, 4.5.5.62, 4.5.5.64, 4.6.0.66)    
+ERROR: No matching distribution found for opencv-contrib-python==3.4.2.17
+直接按安装新的版本
+opencv-contrib-python==4.6.0.66
+
+问题3.
+        building library "npymath" sources
+        error: Microsoft Visual C++ 14.0 is required. Get it with "Build Tools for Visual Studio": https://visualstudio.microsoft.com/downloads/  
+        [end of output]
+      
+下载VisualStudioSetup.exe
+[https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=community&channel=Release&version=VS2022&source=VSLandingPage&includeRecommended=true&cid=2030:125a4b78-de0b-48d0-b471-905f542284c1]
+这个很多的项目都是需要的
+
+问题4：缺少qmake
+
+直接安装qt[https://d13lb3tujbc8s0.cloudfront.net/onlineinstallers/qt-unified-windows-x64-4.4.1-online.exe]
+这个安装后添加了10G多，注意磁盘空间
+选择开发版本
+把qmake.exe的路径包含到系统环境变量path目录中
+
+
